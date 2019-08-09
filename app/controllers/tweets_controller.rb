@@ -36,6 +36,9 @@ class TweetsController < ApplicationController
       end
     end
   end
+  def confirm
+    @tweet = Tweet.new(tweet_params)
+  end
 
   # PATCH/PUT /tweets/1
   # PATCH/PUT /tweets/1.json
